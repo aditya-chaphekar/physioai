@@ -124,7 +124,7 @@ const CustomTable = ({ columns, data }) => {
           <InputField
             style={{ width: "25%", marginTop: "0px", marginLeft: "10px" }}
             type="number"
-            value={pageIndex + 1}
+            defaultValue={pageIndex + 1}
             onChangeHandler={(e) => {
               const page = e.target.value ? Number(e.target.value) - 1 : 0;
               gotoPage(page);
@@ -151,12 +151,6 @@ const CustomTable = ({ columns, data }) => {
             <i className="fas fa-angle-down"></i>
           </div>
         </div>
-        {/* <select
-          
-        >
-         
-          ))}
-        </select> */}
       </div>
     </div>
   );

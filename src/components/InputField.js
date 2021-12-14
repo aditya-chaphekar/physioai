@@ -14,6 +14,7 @@ const InputField = ({
   id,
   leftIcon,
   style,
+  defaultValue,
 }) => {
   return (
     <div className="base-input mt-10" style={style}>
@@ -25,6 +26,7 @@ const InputField = ({
       ) : null}
 
       <input
+        defaultValue={defaultValue}
         style={leftIcon ? { paddingLeft: "2rem" } : null}
         id={id}
         type={type || "text"}
