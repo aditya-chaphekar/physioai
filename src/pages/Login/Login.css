@@ -1,0 +1,33 @@
+/* Login Styles */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #1bbc9b;
+}
+
+.brand-heading {
+  margin-top: 15vh;
+  font-size: 3rem;
+  font-weight: 600;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.login-heading {
+  font-size: 2.75rem;
+  font-weight: 200;
+  font-style: italic;
+}
+.login-forgot {
+  font-size: 1rem;
+  font-weight: 200;
+  font-style: italic;
+  width: 100%;
+  text-align: center;
+}
+.login-forgot:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
