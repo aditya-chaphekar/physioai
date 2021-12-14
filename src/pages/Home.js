@@ -7,16 +7,20 @@ import { InputButton } from "../components/InputField";
 const Home = () => {
   const navigate = useNavigate();
   const [tableData, setTableData] = React.useState([]);
-  useEffect(() => {
-    if (
-      localStorage.getItem("loggedIn") === "false" ||
-      localStorage.getItem("loggedIn") === null
-    ) {
-      localStorage.removeItem("userData");
-      navigate("/login");
-    }
-    getData();
-  }, []);
+  useEffect(
+    () => {
+      if (
+        localStorage.getItem("loggedIn") === "false" ||
+        localStorage.getItem("loggedIn") === null
+      ) {
+        localStorage.removeItem("userData");
+        navigate("/login");
+      }
+      getData();
+    },
+    // eslint-disable-next-line
+    []
+  );
 
   const columns = React.useMemo(
     () => [
